@@ -76,7 +76,7 @@ function Transactions() {
               <td className='pl-10 py-5'>123*****</td>
               <td className='pl-10 py-5'>05-05-2024</td>
               <td className='pl-10 py-5'>-$2500</td>
-              <td className='pl-10 py-5'><div id="btn" className='rounded-3xl border border-blue-700 text-blue-700 px-3 py-1 w-fit flex justify-center'>download</div></td>
+              <td className='pl-10 py-5'><div id="btn" className='rounded-3xl border hover:text-white hover:bg-blue-700 cursor-pointer border-blue-700 text-blue-700 px-3 py-1 w-fit flex justify-center'>download</div></td>
             </tr>
             
             

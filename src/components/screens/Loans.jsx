@@ -71,7 +71,7 @@ function Loans() {
               <td className='pl-10 py-5 capitalize'>8 months</td>
               <td className='pl-10 py-5 capitalize'>12%</td>
               <td className='pl-10 py-5 capitalize'>$2000 / month</td>
-              <td className='pl-10 py-5 capitalize'><div id="btn" className='rounded-3xl border border-blue-700 text-blue-700 px-3 py-1 w-fit flex justify-center'>repay</div></td>
+              <td className='pl-10 py-5 capitalize'><div id="btn" className='rounded-3xl border  hover:text-white hover:bg-blue-700 cursor-pointer border-blue-700 text-blue-700 px-3 py-1 w-fit flex justify-center'>repay</div></td>
             </tr>
             <tr>
               <td className="pl-10 py-5 text-red-600 capitalize">total</td>
