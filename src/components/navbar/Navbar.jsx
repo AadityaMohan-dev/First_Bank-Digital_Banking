@@ -3,7 +3,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import SettingsIcon from '@mui/icons-material/Settings';
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone';
 import PersonIcon from '@mui/icons-material/Person';
-function Navbar() {
+function Navbar(props) {
   return (
     <nav>
       <div
@@ -11,7 +11,7 @@ function Navbar() {
         className=" flex items-center justify-between px-10 w-full"
       >
         <div id="left-title" className="text-3xl font-semibold">
-          Overview
+          {props.title}
         </div>
         <div id="right-box" className="h-10  w-96 flex justify-around">
           <div id="srch" className="flex items-center justify-start h-full">            

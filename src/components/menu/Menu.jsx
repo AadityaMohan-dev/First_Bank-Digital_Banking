@@ -11,6 +11,7 @@ import PaidIcon from "@mui/icons-material/Paid";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import logo from '../../assets/img_header_logo.png'
+import { Link } from "react-router-dom";
 function Menu() {
 
     const handleSideMenu = () => {
@@ -21,7 +22,7 @@ function Menu() {
       <div
         id="main-menu-container"
       >
-      <div id="logo-sidemenu" className="inline-flex sm:block justify-between w-full">
+      <div id="logo-sidemenu" className="inline-flex sm:block justify-between ">
       <div id="logo" className="w-32 sm:w-44">
           <img
             src={logo} alt=""
@@ -50,73 +51,99 @@ function Menu() {
          <div id="options" className="sm:block sm:bg-transparent px-3 grid justify-end text-sm font-semibold sm:text-xl text-gray-500 z-10">
          <div id="optn" className="w-56 sm:w-fit sm:p-0 sm:bg-transparent p-5 bg-slate-300 rounded">
          <div id="opt-1" className="sm:py-3 py-2 ">
-            <div id="icon-opt-container" className="flex align-middle gap-3">
+            <div id="icon-opt-container" className="">
+              <Link to="/" className="flex align-middle gap-3">
               <HomeIcon />
               <span className="hover:text-blue-700 cursor-pointer">
                 Dashboard
               </span>
+              </Link>
+              
             </div>
           </div>
           <div id="opt-2" className="sm:py-3 py-2">
             <div id="icon-opt-container" className="flex align-middle gap-3">
+              <Link to="/transaction" className="flex align-middle gap-3">
               <PaymentsIcon />
               <span className="hover:text-blue-700 cursor-pointer">
                 Transactions
               </span>
+              </Link>
+              
             </div>
           </div>
           <div id="opt-3" className="sm:py-3 py-2">
             <div id="icon-opt-container" className="flex align-middle gap-3">
+              <Link to="/accounts" className="flex align-middle gap-3">
               <PersonIcon />
               <span className="hover:text-blue-700 cursor-pointer">
                 Accounts
               </span>
+              </Link>
+             
             </div>
           </div>
           <div id="opt-4" className="sm:py-3 py-2 ">
             <div id="icon-opt-container" className="flex align-middle gap-3">
+              <Link to="/investments" className="flex align-middle gap-3">
               <BarChartIcon />
               <span className="hover:text-blue-700 cursor-pointer">
                 Investments
               </span>
+              </Link>
+              
             </div>
           </div>
           <div id="opt-5" className="sm:py-3 py-2">
             <div id="icon-opt-container" className="flex align-middle gap-3">
+              <Link to="/credit-card" className="flex align-middle gap-3">
               <CreditCardIcon />
               <span className="hover:text-blue-700 cursor-pointer">
                 Credit Cards
               </span>
+              </Link>
+              
             </div>
           </div>
           <div id="opt-6" className="sm:py-3 py-2">
             <div id="icon-opt-container" className="flex align-middle gap-3">
+              <Link to="/loans" className="flex align-middle gap-3">
               <PaidIcon />
               <span className="hover:text-blue-800 cursor-pointer">Loans</span>
-            </div>
+              </Link>
+              </div>
           </div>
           <div id="opt-7" className="sm:py-3 py-2 ">
             <div id="icon-opt-container" className="flex align-middle gap-3">
+              <Link to="/services" className="flex align-middle gap-3">
               <DesignServicesIcon />
               <span className="hover:text-blue-700 cursor-pointer">
                 Services
               </span>
+              </Link>
+              
             </div>
           </div>
           <div id="opt-8" className="sm:py-3 py-2  ">
             <div id="icon-opt-container" className="flex align-middle gap-3">
+              <Link to="/priviliges" className="flex align-middle gap-3">
               <TungstenIcon />
               <span className="hover:text-blue-700 cursor-pointer">
                 My Priviliges
               </span>
+              </Link>
+              
             </div>
           </div>
           <div id="opt-9" className="sm:py-3 py-2  ">
             <div id="icon-opt-container" className="flex align-middle gap-3">
+              <Link to="/settings" className="flex align-middle gap-3">
               <SettingsIcon />
               <span className="hover:text-blue-700 cursor-pointer">
                 Settings
               </span>
+              </Link>
+              
             </div>
           </div>
 
