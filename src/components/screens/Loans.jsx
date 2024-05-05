@@ -52,7 +52,7 @@ function Loans() {
             </div>
           </div>
           <div id="row-1-loan" className='w-full px-10 grid gap-4'>
-          <span className='text-xl text-blue-950 font-semibold text-xl capitalize'>active loan overwiew</span>
+          <span className=' text-blue-950 font-semibold text-xl capitalize'>active loan overwiew</span>
           <div id="radio-btns"></div>
           <table className='w-full rounded-xl bg-white p-10'>
             <tr className=' rounded-xl h-14'>
@@ -65,13 +65,22 @@ function Loans() {
               <th className='font-medium text-slate-400 capitalize'>Repay</th>
             </tr>
             <tr className='rounded-xl border h-14 w-full items-center'>
-              <td className='pl-10 py-5'>01.</td>
-              <td className='pl-10 py-5'>$10,000</td>
-              <td className='pl-10 py-5'>$40,500</td>
-              <td className='pl-10 py-5'>8 months</td>
-              <td className='pl-10 py-5'>12%</td>
-              <td className='pl-10 py-5'>-$2000 / month</td>
-              <td className='pl-10 py-5'><div id="btn" className='rounded-3xl border border-blue-700 text-blue-700 px-3 py-1 w-fit flex justify-center'>repay</div></td>
+              <td className='pl-10 py-5 capitalize'>01.</td>
+              <td className='pl-10 py-5 capitalize'>$10,000</td>
+              <td className='pl-10 py-5 capitalize'>$40,500</td>
+              <td className='pl-10 py-5 capitalize'>8 months</td>
+              <td className='pl-10 py-5 capitalize'>12%</td>
+              <td className='pl-10 py-5 capitalize'>$2000 / month</td>
+              <td className='pl-10 py-5 capitalize'><div id="btn" className='rounded-3xl border border-blue-700 text-blue-700 px-3 py-1 w-fit flex justify-center'>repay</div></td>
+            </tr>
+            <tr>
+              <td className="pl-10 py-5 text-red-600 capitalize">total</td>
+              <td className="pl-10 py-5 text-red-600 capitalize">$10,000</td>
+              <td className="pl-10 py-5 text-red-600 capitalize">$40,500</td>
+              <td className="pl-10 py-5 text-red-600 capitalize"></td>
+              <td className="pl-10 py-5 text-red-600 capitalize"></td>
+              <td className="pl-10 py-5 text-red-600 capitalize">$2000 / month</td>
+              <td className="pl-10 py-5 text-red-600 capitalize"></td>
             </tr>
             
             
