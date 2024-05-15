@@ -12,7 +12,7 @@ function Loans() {
     <div id="main-dashboarde" className="w-screen  h-full bg-blue-100 ">
       <div id="nav-container" className="flex  ">
         <div id="sidebar" className="p-5 w-64  h-screen drop-shadow  bg-white">
-          <Menu />
+          <Menu select = 'loan'/>
         </div>
         <div id="right-side" className="w-full  ">
           <div

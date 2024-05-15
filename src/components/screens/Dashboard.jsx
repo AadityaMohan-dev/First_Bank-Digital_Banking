@@ -11,7 +11,7 @@ function Dashboard() {
      
       <div id="main-dashboarde" className="w-screen  bg-blue-100 ">
         <div id="nav-container" className="flex ">
-        <div id="sidebar" className='p-5 w-64  h-screen drop-shadow  bg-white'><Menu/></div>
+        <div id="sidebar" className='p-5 w-64  h-screen drop-shadow  bg-white'><Menu select='dash'/></div>
         <div id="right-side" className="w-full">
         <div id="navbar" className='w-full border  grid items-center h-20  bg-white drop-shadow '><Navbar title='Overview'/></div>
         <div id="row-1-dash" className="w-full border flex justify-between p-10 bg-blue-100">

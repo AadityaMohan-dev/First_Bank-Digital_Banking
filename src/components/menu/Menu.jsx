@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import PaymentsIcon from "@mui/icons-material/Payments";
 import PersonIcon from "@mui/icons-material/Person";
@@ -12,11 +12,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import logo from '../../assets/img_header_logo.png'
 import { Link } from "react-router-dom";
-function Menu() {
 
-    const handleSideMenu = () => {
-        
-    }
+function Menu(props) {
+  const [selected, setSelected] = useState(props.select);
   return (
     <>
       <div
@@ -54,7 +52,7 @@ function Menu() {
             <div id="icon-opt-container" className="">
               <Link to="/" className="flex align-middle gap-3">
               <HomeIcon />
-              <span className="hover:text-blue-700 cursor-pointer">
+              <span onClick={()=>{setSelected('dash')}} className={`hover:text-blue-700 cursor-pointer ${selected == 'dash'?'text-blue-900' : 'text-slate-500'}`}>
                 Dashboard
               </span>
               </Link>
@@ -65,7 +63,7 @@ function Menu() {
             <div id="icon-opt-container" className="flex align-middle gap-3">
               <Link to="/transaction" className="flex align-middle gap-3">
               <PaymentsIcon />
-              <span className="hover:text-blue-700 cursor-pointer">
+              <span onClick={()=>{setSelected('tran')}} className={`hover:text-blue-700 cursor-pointer ${selected == 'tran'?'text-blue-900' : 'text-slate-500'}`}>
                 Transactions
               </span>
               </Link>
@@ -76,7 +74,7 @@ function Menu() {
             <div id="icon-opt-container" className="flex align-middle gap-3">
               <Link to="/accounts" className="flex align-middle gap-3">
               <PersonIcon />
-              <span className="hover:text-blue-700 cursor-pointer">
+              <span onClick={()=>{setSelected('acc')}} className={`hover:text-blue-700 cursor-pointer ${selected == 'acc'?'text-blue-900' : 'text-slate-500'}`}>
                 Accounts
               </span>
               </Link>
@@ -87,7 +85,7 @@ function Menu() {
             <div id="icon-opt-container" className="flex align-middle gap-3">
               <Link to="/investments" className="flex align-middle gap-3">
               <BarChartIcon />
-              <span className="hover:text-blue-700 cursor-pointer">
+              <span onClick={()=>{setSelected('inv')}} className={`hover:text-blue-700 cursor-pointer ${selected == 'inv'?'text-blue-900' : 'text-slate-500'}`}>
                 Investments
               </span>
               </Link>
@@ -98,7 +96,7 @@ function Menu() {
             <div id="icon-opt-container" className="flex align-middle gap-3">
               <Link to="/credit-card" className="flex align-middle gap-3">
               <CreditCardIcon />
-              <span className="hover:text-blue-700 cursor-pointer">
+              <span onClick={()=>{setSelected('cc')}} className={`hover:text-blue-700 cursor-pointer ${selected == 'cc'?'text-blue-900' : 'text-slate-500'}`}>
                 Credit Cards
               </span>
               </Link>
@@ -109,7 +107,7 @@ function Menu() {
             <div id="icon-opt-container" className="flex align-middle gap-3">
               <Link to="/loans" className="flex align-middle gap-3">
               <PaidIcon />
-              <span className="hover:text-blue-800 cursor-pointer">Loans</span>
+              <span onClick={()=>{setSelected('loan')}} className={`hover:text-blue-800 cursor-pointer ${selected == 'loan' ? 'text-blue-900':'text-slate-500'}`}>Loans</span>
               </Link>
               </div>
           </div>
@@ -117,7 +115,7 @@ function Menu() {
             <div id="icon-opt-container" className="flex align-middle gap-3">
               <Link to="/services" className="flex align-middle gap-3">
               <DesignServicesIcon />
-              <span className="hover:text-blue-700 cursor-pointer">
+              <span onClick={()=>{setSelected('serv')}} className={`hover:text-blue-700 cursor-pointer ${selected == 'serv'?'text-blue-900' : 'text-slate-500'}`}>
                 Services
               </span>
               </Link>
@@ -128,7 +126,7 @@ function Menu() {
             <div id="icon-opt-container" className="flex align-middle gap-3">
               <Link to="/priviliges" className="flex align-middle gap-3">
               <TungstenIcon />
-              <span className="hover:text-blue-700 cursor-pointer">
+              <span onClick={()=>{setSelected('priv')}} className={`hover:text-blue-700 cursor-pointer ${selected == 'priv'?'text-blue-900' : 'text-slate-500'}`}>
                 My Priviliges
               </span>
               </Link>
@@ -137,9 +135,9 @@ function Menu() {
           </div>
           <div id="opt-9" className="sm:py-3 py-2  ">
             <div id="icon-opt-container" className="flex align-middle gap-3">
-              <Link to="/settings" className="flex align-middle gap-3">
+              <Link to="/settings" className={`flex align-middle gap-3`}>
               <SettingsIcon />
-              <span className="hover:text-blue-700 cursor-pointer">
+              <span onClick={()=>{setSelected('sett')}} className={`hover:text-blue-700 cursor-pointer ${selected == 'sett'?'text-blue-900' : 'text-slate-500'}`}>
                 Settings
               </span>
               </Link>
