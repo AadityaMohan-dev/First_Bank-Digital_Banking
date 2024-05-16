@@ -21,30 +21,30 @@ function Loans() {
           >
             <Navbar title="Loans" />
           </div>
-          <div id="row-1-dash" className="flex justify-around py-10">
+          <div id="row-1-dash" className="flex justify-around py-5">
             <div id="cards" className="w-52 h-20 bg-white rounded-xl flex justify-around items-center">
-              <div id="icon" className="text-blue-700 "><PersonIcon/></div>
+              <div id="icon" className="rounded-xl align-middle bg-slate-100 text-blue-900 p-2"><PersonIcon/></div>
               <div id="title-price" className="grid">
                   <span className="text-slate-500 font-semibold capitalize">Personal loan</span>
                   <span className="text-blue-950 font-bold ">$50,000</span>
               </div>
             </div>
             <div id="cards" className="w-52 h-20 bg-white rounded-xl flex justify-around items-center">
-              <div id="icon" className="text-blue-700 "><WorkIcon/></div>
+              <div id="icon" className="rounded-xl align-middle bg-slate-100 text-blue-900 p-2"><WorkIcon/></div>
               <div id="title-price" className="grid">
                   <span className="text-slate-500 font-semibold capitalize">corporate loans</span>
                   <span className="text-blue-950 font-bold ">$100,000</span>
               </div>
             </div>
             <div id="cards" className="w-52 h-20 bg-white rounded-xl flex justify-around items-center">
-              <div id="icon" className="text-blue-700 "><TrendingUpIcon/></div>
+              <div id="icon" className="rounded-xl align-middle bg-slate-100 text-blue-900 p-2"><TrendingUpIcon/></div>
               <div id="title-price" className="grid">
                   <span className="text-slate-500 font-semibold capitalize">bussiness loan</span>
                   <span className="text-blue-950 font-bold ">$500,000</span>
               </div>
             </div>
             <div id="cards" className="w-52 h-20 bg-white rounded-xl flex justify-around items-center">
-              <div id="icon" className="text-blue-700 "><DesignServicesIcon/></div>
+              <div id="icon" className="rounded-xl align-middle bg-slate-100 text-blue-900 p-2"><DesignServicesIcon/></div>
               <div id="title-price" className="grid">
                   <span className="text-slate-500 font-semibold capitalize">custom loans</span>
                   <span className="text-blue-950 font-bold ">Choose Money</span>

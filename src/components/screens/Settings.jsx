@@ -4,6 +4,7 @@ import Navbar from "../navbar/Navbar";
 
 import Edit_profile from "./Settings/Edit_profile";
 import Prefrence from "./Settings/Prefrence";
+import Security from "./Settings/Security";
 
 function Settings() {
   const [selectedoptn, SetSelectedOptn] = useState("edit");
@@ -14,7 +15,7 @@ function Settings() {
         <div id="nav-container" className="flex ">
           <div
             id="sidebar"
-            className="p-5 w-64  h-screen drop-shadow  bg-white"
+            className="p-5 w-64   h-screen drop-shadow  bg-white"
           >
             <Menu select="sett" />
           </div>
@@ -61,7 +62,7 @@ function Settings() {
                   <div
                     id="opt-secure"
                     onClick={() => {
-                      SetSelectedOptn("secure"), setComponent();
+                      SetSelectedOptn("secure"), setComponent(<Security/>);
                     }}
                     className={`p-5 cursor-pointer hover:text-blue-500 font-semibold text-lg ${
                       selectedoptn == "secure"
